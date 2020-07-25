@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="form" lang="ru">
+<html class="form-page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <title>Кэт энерджи - подбор программы</title>
 </head>
 
-<body class="form__body">
+<body class="form-page__body">
   <header class="header">
     <nav class="header__nav">
       <a class="header__logo logo-link">
@@ -20,17 +20,18 @@
           <a class="menu__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link">Подбор программы</a>
+          <a class="menu__link menu__link--active">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
-  <!-- <main class="form-main main">
-    <h1 class="main__title title--black">Подбор программы</h1>
+  <main class="form-page__main form-main">
+    <h1 class="form-main__title form-main__title--black">Подбор программы</h1>
     <form action="https://echo.htmlacademy.ru/" method="get" class="main__form main-form">
-      <fieldset class="form__fieldset form__fieldset--text">
-        <legend class="form__legend">Заполните анкету, и мы подберем
-          программу питания для вашего кота</legend>
+      <fieldset class="form-main__fieldset">
+        <p class="form-main__text">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+        <legend class="visually-hidden">Информация про вашего кота</legend>
         <label>Имя:*
           <input type="text" name="form-name" class="form__input form__input--text" placeholder="Барсик">
         </label>
@@ -41,7 +42,8 @@
           <input type="number" name="number-age" class="form__input form__input--age" placeholder="7">
         </label>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--radio">
+      <fieldset class="form-main__fieldset">
+        <legend class="visually-hidden">Ваша цель</legend>
         <label>
           <input type="radio" name="program" value="Weight-loss" class="form__input form__input--radio">
           Похудение
@@ -55,8 +57,8 @@
           Не знаю (Нужен ваш совет)
         </label>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--contacts">
-        <legend class="form__legend">Контактные данные (владельца кота)</legend>
+      <fieldset class="form-main__fieldset form-main__fieldset--contacts">
+        <legend class="form-main__legend">Контактные данные (владельца кота)</legend>
         <label>E-mail:*
           <input type="email" name="e-mail" placeholder="kuklachev@gmail.com" class="form__input form__input--radio">
         </label>
@@ -64,30 +66,28 @@
           <input type="tel" name="phone-number" placeholder="8 (960) 900-60-90" class="form__input form__input--radio">
         </label>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--comment">
-        <legend class="form__legend">Комментарий</ligend>
-          <input type="text" name="input-comment" class="form__input form__input--coment"
-            placeholder="Расскажите обо всех повaдках кота">
-      </fieldset>
+      <label class="form__legend">Комментарий
+        <textarea name="textarea-comment" class="form__input form__input--coment"
+          placeholder="Расскажите обо всех повaдках кота"></textarea>
+      </label>
       <fieldset class="form__fieldset form__filedset--additionally">
-        <legend class="form__legend">
-          <label>
-            <input type="checkbox" name="sweetener" class="form__input form__input--checkbox" checked>
-            Сахарозаменитель
-          </label>
-          <label>
-            <input type="checkbox" name="water" class="form__input form__input--checkbox">
-            Питьевая вода
-          </label>
-          <label>
-            <input type="checkbox" name="milk" class="form__input form__input--checkbox">
-            Молоко
-          </label>
-          <label>
-            <input type="checkbox" name="vitamins" class="form__input form__input--checkbox">
-            Bитамины
-          </label>
-        </legend>
+        <legend class="form__legend">Допольнительно</legend>
+        <label>
+          <input type="checkbox" name="sweetener" class="form__input form__input--checkbox" checked>
+          Сахарозаменитель
+        </label>
+        <label>
+          <input type="checkbox" name="water" class="form__input form__input--checkbox">
+          Питьевая вода
+        </label>
+        <label>
+          <input type="checkbox" name="milk" class="form__input form__input--checkbox">
+          Молоко
+        </label>
+        <label>
+          <input type="checkbox" name="vitamins" class="form__input form__input--checkbox">
+          Bитамины
+        </label>
       </fieldset>
       <button type="submit" class="form__button button">Отправить заявку</button>
       <p class="form__note">* — Обязательные поля</p>
@@ -103,10 +103,10 @@
         Санкт-Петербург</address>
       <img src="" alt="Карта проезда" class="contacts__map" width="320" height="362">
     </section>
-  </main> -->
+  </main>
   <footer class="footer">
     <a class="footer__logo-link logo-link">
-      <img src="footer-logo-img" alt="" width="128" height="24">
+      <img src="logo-link__img" alt="" width="128" height="24">
     </a>
     <ul class="footer__social social-list">
       <li class="social-list__item">
