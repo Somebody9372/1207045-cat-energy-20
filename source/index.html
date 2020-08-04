@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet"> -->
   <title>Кэт энерджи - главная</title>
 </head>
 <!-- у меня таки остались проблелы по БЭМу.Хотел спросить,в каком случае лучше делать бэм блок,а в каком элемент блока?
@@ -96,9 +95,10 @@
       <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
       <img src="" alt="Фото кота" class="example__img" width="311" height="232">
 
-      <button type="button" class="toggle__text">Было</button>
-      <button type="button" class="toggle__text">Стало</button>
-      <div class="toggle__bar"></div>
+      <div class="toggle">
+        <button type="button" class="toggle__text">Было</button>
+        <button type="button" class="toggle__text">Стало</button>
+        <div class="toggle__bar"></div>
       </div>
     </section>
     <section class="contacts">
