@@ -1,28 +1,8 @@
-// Давай я пока так сделаю,а отступы добавлю на этапе построения сеток?В отрыве от этого мне не понятно )
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
+.page {
+  box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0)
-}
-
-.button--green {
-  background-color: @green;
-  color: @white;
+.page__body {
+  padding: 11px 20px 22px;
 }
 
