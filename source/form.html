@@ -32,85 +32,82 @@
       <p class="intro__text">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
     </section>
-    <<<<<<< HEAD <section class="form-section">
-      =======
-      <section class="form">
-        >>>>>>> module3-task1
-        <form action="https://echo.htmlacademy.ru/" method="get" class="form">
-          <fieldset class="form__fieldset">
-            <legend class="visually-hidden">Информация про вашего кота</legend>
-            <label>Имя:*
-              <input type="text" name="form-name" class="form__input form__input--text" placeholder="Барсик">
-            </label>
-            <label>Вес (кг):*
-              <input type="number" name="form-weight" class="form__input form__input--number" placeholder="7">
-            </label>
-            <label>Возраст (лет):
-              <input type="number" name="number-age" class="form__input form__input--age" placeholder="7">
-            </label>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--target">
-            <legend class="visually-hidden">Ваша цель</legend>
-            <label>
-              <input type="radio" name="program" value="Weight-loss" class="form__input">
-              Похудение
-            </label>
-            <label>
-              <input type="radio" name="program" value="weight-gain" class="form__input">
-              Набор массы
-            </label>
-            <label>
-              <input type="radio" name="program" value="need-advice" class="form__input">
-              Не знаю (Нужен ваш совет)
-            </label>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
-            <label>E-mail:*
-              <input type="email" name="e-mail" placeholder="kuklachev@gmail.com" class="form__input">
-            </label>
-            <label>
-              <input type="tel" name="phone-number" placeholder="8 (960) 900-60-90" class="form__input">
-            </label>
-          </fieldset>
-          <label class="form__legend">Комментарий
-            <textarea name="textarea-comment" class="form__input form__input--coment"
-              placeholder="Расскажите обо всех повaдках кота"></textarea>
+    <section class="form">
+      <form action="https://echo.htmlacademy.ru/" method="get" class="form">
+        <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Информация про вашего кота</legend>
+          <label>Имя:*
+            <input type="text" name="form-name" class="form__input form__input--text" placeholder="Барсик">
           </label>
-          <fieldset class="form__fieldset form__filedset--additionally">
-            <legend class="form__legend">Допольнительно</legend>
-            <label>
-              <input type="checkbox" name="sweetener" class="form__input" checked>
-              Сахарозаменитель
-            </label>
-            <label>
-              <input type="checkbox" name="water" class="form__input">
-              Питьевая вода
-            </label>
-            <label>
-              <input type="checkbox" name="milk" class="form__input">
-              Молоко
-            </label>
-            <label>
-              <input type="checkbox" name="vitamins" class="form__input">
-              Bитамины
-            </label>
-          </fieldset>
-          <button type="submit" class="form__button button button-green">Отправить заявку</button>
-          <p class="form__note">* — Обязательные поля</p>
-        </form>
-      </section>
-      <section class="contacts">
-        <h2 class="visyally-hidden">Адрес магазина "Кэт энерджи"</h2>
-        <p class="contacts__text">
-          Приглашаем
-          к сотрудничеству дилеров!</p>
-        <address class="contacts__address">
-          ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</address>
-        <img src="" alt="Карта проезда" class="contacts__map" width="320" height="362">
-      </section>
+          <label>Вес (кг):*
+            <input type="number" name="form-weight" class="form__input form__input--number" placeholder="7">
+          </label>
+          <label>Возраст (лет):
+            <input type="number" name="number-age" class="form__input form__input--age" placeholder="7">
+          </label>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--target">
+          <legend class="visually-hidden">Ваша цель</legend>
+          <label>
+            <input type="radio" name="program" value="Weight-loss" class="form__input">
+            Похудение
+          </label>
+          <label>
+            <input type="radio" name="program" value="weight-gain" class="form__input">
+            Набор массы
+          </label>
+          <label>
+            <input type="radio" name="program" value="need-advice" class="form__input">
+            Не знаю (Нужен ваш совет)
+          </label>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--contacts">
+          <legend class="form__legend">Контактные данные (владельца кота)</legend>
+          <label>E-mail:*
+            <input type="email" name="e-mail" placeholder="kuklachev@gmail.com" class="form__input">
+          </label>
+          <label>
+            <input type="tel" name="phone-number" placeholder="8 (960) 900-60-90" class="form__input">
+          </label>
+        </fieldset>
+        <label class="form__legend">Комментарий
+          <textarea name="textarea-comment" class="form__input form__input--coment"
+            placeholder="Расскажите обо всех повaдках кота"></textarea>
+        </label>
+        <fieldset class="form__fieldset form__filedset--additionally">
+          <legend class="form__legend">Допольнительно</legend>
+          <label>
+            <input type="checkbox" name="sweetener" class="form__input" checked>
+            Сахарозаменитель
+          </label>
+          <label>
+            <input type="checkbox" name="water" class="form__input">
+            Питьевая вода
+          </label>
+          <label>
+            <input type="checkbox" name="milk" class="form__input">
+            Молоко
+          </label>
+          <label>
+            <input type="checkbox" name="vitamins" class="form__input">
+            Bитамины
+          </label>
+        </fieldset>
+        <button type="submit" class="form__button button button-green">Отправить заявку</button>
+        <p class="form__note">* — Обязательные поля</p>
+      </form>
+    </section>
+    <section class="contacts">
+      <h2 class="visyally-hidden">Адрес магазина "Кэт энерджи"</h2>
+      <p class="contacts__text">
+        Приглашаем
+        к сотрудничеству дилеров!</p>
+      <address class="contacts__address">
+        ул. Большая
+        Конюшенная, д. 19/8
+        Санкт-Петербург</address>
+      <img src="" alt="Карта проезда" class="contacts__map" width="320" height="362">
+    </section>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo-link logo-link">
