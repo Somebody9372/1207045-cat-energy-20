@@ -1,6 +1,27 @@
+.developer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .developer {
+    width: auto;
+  }
+}
+
 .developer__link {
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
   color: @dark-grey;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (@mobile-width-only) {
+  .developer__link {
+    width: 100%;
+  }
 }

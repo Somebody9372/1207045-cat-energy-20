@@ -1,0 +1,62 @@
+.navigation__menu {
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+
+
+.navigation {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: @Oswald;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  color: @black;
+  text-decoration: none;
+  padding: 11px 0 17px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+
+    width: 100%;
+  }
+
+  .navigation__menu {
+    display: flex;
+    // c меню что-то странное - не появляется,хотя ей ууазан флекс
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .navigation__menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navigation__link--active {
+    border-bottom: 2px solid #68B738;
+  }
+
+  .navigation__link {
+    color: @white;
+    }
+
+  .navigation__link--active {
+    border-bottom: 2px solid @white;
+  }
+}
+
+

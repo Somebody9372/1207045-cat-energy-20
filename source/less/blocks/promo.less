@@ -8,13 +8,12 @@
 }
 
 .promo__title {
-  font-family: @Oswald;
+  font-family: "Oswald";
   font-size: 36px;
   line-height: 36px;
 
   margin: 0;
   padding: 0 10px;
-  width: 320px;
 }
 
 .promo__subtitle {
@@ -27,4 +26,10 @@
   text-decoration: none;
 
   width: 100%;
+}
+
+@media (min-width: @mobile-width) {
+  .promo {
+    min-height: 320px;
+  }
 }

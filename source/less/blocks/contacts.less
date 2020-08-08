@@ -1,3 +1,8 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contacts__text {
   font-family: @Oswald;
   line-height: 18px;
@@ -7,4 +12,10 @@
 .contacts__address {
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 62px 52px 51px 51px;
+  }
 }

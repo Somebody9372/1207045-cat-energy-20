@@ -1,5 +1,6 @@
 .features__list {
   list-style: none;
+  padding: 0;
 }
 
 .features__title {
@@ -17,4 +18,17 @@
 
   padding-left: 20px;
   padding-right: 5px;
+}
+
+@media (min-width: @tablet-width ) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .features__item {
+    width: 230px;
+    min-height: 280px;
+  }
 }
