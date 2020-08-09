@@ -3,15 +3,54 @@
   font-size: 16px;
   line-height: 18px;
   color: @dark-grey;
+
+  width: 100%;
+}
+
+@media (min-width: @desktop-width) {
+ .form__wrapper {
+  display: inline-flex;
+  //  Тут мне не понятно: почему встают в линию только в этом случае?Контейнеру
+  // задан флекс,а значит элементы должны встать в линию?
+  }
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset {
+    flex-direction: row;
+   }
+ }
+
+.form__fieldset--container {
+  flex-direction: column;
 }
 
 .form__fieldset--target {
   color: @light-black;
 }
 
-.form__filedset--additionally {
-  color: @black;
+
+.form__fieldset--contacts {
+  flex-direction: column;
 }
+
+@media (min-width: @desktop-width) {
+  .form__fieldset--contacts {
+    flex-direction: row;
+    justify-content: space-between;
+   }
+ }
+
+ @media (min-width: @tablet-width) {
+  .form__filedset--additionally {
+    flex-wrap: wrap;
+   }
+ }
 
 .form__legend {
   font-size: 24px;
@@ -19,7 +58,19 @@
   color: @black;
 }
 
+.form__legeng--additionally {
+  width: 221px;
+  min-height: 40px;
+}
+
 .form__note {
   font-family: @Arial;
   color: @black;
 }
+
+
+@media (min-width: @tablet-width) {
+  .form__wrapper--submit {
+    display: flex;
+   }
+ }

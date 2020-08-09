@@ -3,6 +3,22 @@
 }
 
 .page__body {
+  font-family: @Arial;
+  color: @black;
+
   padding: 11px 20px 22px;
   margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .page__body--tablet-width {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .page__body--form-width {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+

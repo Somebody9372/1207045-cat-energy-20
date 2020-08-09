@@ -21,11 +21,25 @@
   color: @black;
 }
 
+@media (min-width: @tablet-width) {
+  .programs-list__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .programs-list__text {
   font-family: @Arial;
   font-size: 14px;
   line-height: 18px;
   color: @dark-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .programs-list__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .programs-list__link {
@@ -35,4 +49,11 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .programs-list__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

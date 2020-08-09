@@ -2,16 +2,34 @@
   list-style: none;
 }
 
+.additional-list__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .additional-list__title {
   font-size: 16px;
   line-height: 16px;
   color: @light-black;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  .additional-list__title{
+    width: 100%;
+  }
+}
+
 .additional-list__attribute {
   font-size: 14px;
   line-height: 14px;
   color: @dark-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-list__attribute {
+    margin-left: auto;
+  }
 }
 
 .additional-list__value {
@@ -24,4 +42,28 @@
   font-family: @Oswald;
   font-size: 16px;
   line-height: 16px;
+}
+
+@media (min-width: @desktop-width) {
+  .additional-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .additional-list__item {
+    width: 100%;
+    display: flex;
+  }
+
+  // .additional-list__title {
+    // margin-right: auto;
+    // почему не срабатывает?
+    // display: flex;
+    // flex-grow: 1;
+    // при flex-grow он же по идее должен увеличиться?
+  // }
+
+  .additional-list__button {
+    width: 244px;
+  }
 }
