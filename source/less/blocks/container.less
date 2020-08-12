@@ -1,8 +1,31 @@
-// @media (min-width: @desktop-width) {
-//   .container--contacts-map {
-//     position: relative;
-//   }
-// }
+@media (min-width: @desktop-width) {
+  .container--contacts-map {
+    position: relative;
+  }
+}
+
+.container {
+  min-width: 280px;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .container--form {
+    .container {
+      min-width: 709px;
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container--form {
+    .container {
+      min-width: 1224px;
+      padding: 0 108px;
+    }
+  }
+}
 
 @media (min-width: @desktop-width) {
   .container--form {

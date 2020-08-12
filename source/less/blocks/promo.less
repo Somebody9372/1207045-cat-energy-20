@@ -1,10 +1,14 @@
 .promo {
   color: @white;
   background-color: @green;
+  background-size: cover;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+
+  background-position: center bottom 175px;
 }
 
 @media (min-width: @mobile-width) {
@@ -14,15 +18,17 @@
 }
 
 .promo__title {
-  font-family: "Oswald";
+  font-family: @Oswald;
   font-size: 36px;
   line-height: 36px;
 
   margin: 0;
   padding: 0 10px;
+
+  text-align: center;
 }
 
-@media (min-width: @mobile-width) {
+@media (min-width: @tablet-width) {
   .promo__title {
     font-size: 60px;
     line-height: 60px;
@@ -32,9 +38,10 @@
 .promo__subtitle {
   font-size: 14px;
   line-height: 14px;
+  text-align: center;
 }
 
-@media (min-width: @mobile-width) {
+@media (min-width: @tablet-width) {
   .promo__subtitle {
     font-size: 20px;
     line-height: 20px;
