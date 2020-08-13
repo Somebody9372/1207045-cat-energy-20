@@ -1,12 +1,19 @@
 .promo {
   color: @white;
   background-color: @green;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .promo__title {
-  font-family: @Oswald;
+  font-family: "Oswald";
   font-size: 36px;
   line-height: 36px;
+
+  margin: 0;
+  padding: 0 10px;
 }
 
 .promo__subtitle {
@@ -17,4 +24,12 @@
 .promo__link {
   color: @white;
   text-decoration: none;
+
+  width: 100%;
+}
+
+@media (min-width: @mobile-width) {
+  .promo {
+    min-height: 320px;
+  }
 }

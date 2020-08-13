@@ -1,5 +1,5 @@
-@font-family {
-  font-family:"Oswald";
+@font-face {
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -9,14 +9,25 @@
           format('woff');
   }
 
-@font-family {
+@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  // swap - правильный выбор?
-  src: url("fonts/oswaldmedium.woff2")
-          format("woff2"),
-        url("fonts/oswaldregular.woff")
-          format("woff");
+  src: url("fonts/oswaldmedium.woff2") format("woff2"),
+       url("fonts/oswaldmedium.woff") format("woff");
   }
+
+//   консоль выдает ошибку на этот файл:
+//   Line: 18 Expected an indentation at 8 instead of at 7. [warning]
+// npm ERR! code ELIFECYCLE
+// npm ERR! errno 1
+// npm ERR! cat-energy-20@ editorconfig: `editorconfig-cli`
+// npm ERR! Exit status 1
+// npm ERR!
+// npm ERR! Failed at the cat-energy-20@ editorconfig script.
+// npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+// npm ERR! A complete log of this run can be found in:
+// npm ERR!     C:\Users\Dmitry\AppData\Roaming\npm-cache\_logs\2020-08-08T17_15_57_588Z-debug.log
+// npm ERR! Test failed.  See above for more details.
