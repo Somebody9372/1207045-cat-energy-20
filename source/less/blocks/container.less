@@ -5,32 +5,17 @@
 }
 
 .container {
-  min-width: 280px;
+  max-width: 280px;
   padding: 0 20px;
-}
+  margin: 0 auto;
 
-@media (min-width: @tablet-width) {
-  .container--form {
-    .container {
-      min-width: 709px;
-      padding: 0 30px;
-    }
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+    padding: 0 30px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .container--form {
-    .container {
-      min-width: 1224px;
-      padding: 0 108px;
-    }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .container--form {
-    display: flex;
-    // width: 100%;
-    flex-direction: row;
+  @media (min-width: @desktop-width) {
+    max-width: 1224px;
+    padding: 0 108px;
   }
 }

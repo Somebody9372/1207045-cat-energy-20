@@ -1,21 +1,36 @@
 .features__list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
+
+// @media (min-width: @tablet-width) {
+//   .features__item {
+//     padding: 151px 122px 57px 0px;
+//   }
+// }
 
 .features__title {
   font-size: 36px;
   line-height: 40px;
   font-family: @Oswald;
   text-transform: uppercase;
-}
 
-@media (min-width: @tablet-width) {
-  .features__title {
-      font-size: 60px;
-      line-height: 60px;
-    }
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
   }
+}
 
 .features__text {
   font-size: 14px;
@@ -27,15 +42,23 @@
   padding-right: 5px;
 }
 
-@media (min-width: @tablet-width ) {
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
+// @media (min-width: @tablet-width) {
+//   .features__item {
+//     width: 50%;
+//   }
+// }
 
 
-  .features__item {
-    width: 230px;
-    min-height: 280px;
-  }
-}
+// Если делать на флексах,то ширина 50%,а внутри пододвинуть паддингом - правильно?
+// .features__list {
+//   @media (min-width: @tablet-width) {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
+
+// @media (min-width: @tablet-width) {
+//   .features__item {
+//     width: 50%;
+//   }
+// }

@@ -5,14 +5,18 @@
   color: @dark-grey;
 
   width: 100%;
+
+  label {
+    display: flex;
+  }
 }
 
-@media (min-width: @desktop-width) {
-  .form__wrapper {
-    display: inline-flex;
-  //  Тут мне не понятно: почему встают в линию только в этом случае?Контейнеру
-  // задан флекс,а значит элементы должны встать в линию?
-    }
+.form__wrapper{
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .form__fieldset {
@@ -23,8 +27,8 @@
 @media (min-width: @tablet-width) {
   .form__fieldset {
     flex-direction: row;
-    }
   }
+}
 
 .form__fieldset--container {
   flex-direction: column;
@@ -37,30 +41,51 @@
 
 .form__fieldset--contacts {
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form__fieldset--contacts {
     flex-direction: row;
     justify-content: space-between;
-    }
   }
+}
 
 @media (min-width: @tablet-width) {
   .form__filedset--additionally {
     flex-wrap: wrap;
-    }
   }
+}
 
 .form__legend {
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.form__legeng--additionally {
-  width: 221px;
-  min-height: 40px;
+.form__legend--comment {
+  flex-direction: column;
+}
+
+.form__label--additionally {
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 25%;
+  }
 }
 
 .form__note {
@@ -72,5 +97,5 @@
 @media (min-width: @tablet-width) {
   .form__wrapper--submit {
     display: flex;
-    }
   }
+}

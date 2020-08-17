@@ -21,6 +21,7 @@
   font-family: @Oswald;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
 
   margin: 0;
   padding: 0 10px;
@@ -36,21 +37,27 @@
 }
 
 .promo__subtitle {
+  font-family: @Oswald;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-}
 
-@media (min-width: @tablet-width) {
-  .promo__subtitle {
-    font-size: 20px;
-    line-height: 20px;
+  @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
   }
 }
 
 .promo__link {
+  font-size: 14px;
+  line-height: 18px;
   color: @white;
   text-decoration: none;
 
   width: 100%;
+
+  @media (min-width: @tablet-width)  {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -1,3 +1,10 @@
+.example {
+  @media (min-width: @desktop-width){
+    display: flex;
+  }
+}
+
+
 .example__title {
   font-family: @Oswald;
   line-height: 40px;
@@ -17,6 +24,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: @desktop-width){
+    width: 50%;
+  }
 }
 
 .example__text {
@@ -57,3 +68,22 @@
     width: 100%;
   }
 }
+
+.example__img {
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 690px;
+    height: 510px;
+  }
+}
+// Пока так)
+
+// .example__cat-block {
+//   @media (min-width: @desktop-width) {
+//     display: flex;
+//   }
+// }

@@ -1,9 +1,19 @@
 .button {
+  font-family: @Oswald;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
   min-height: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .button--green {
@@ -11,9 +21,8 @@
   color: @white;
 }
 
-@media (min-width: @tablet-width) {
-  .button--green {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
+// @media (min-width: @tablet-width) {
+//   .button--green {
+
+//   }
+// }

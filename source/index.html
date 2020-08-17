@@ -15,19 +15,19 @@
         <img src="" class="logo-link__img" alt="CAT ENERGY" width="101" height="18">
       </a>
 
-      <div class="navigation__container container">
-        <ul class="navigation__menu">
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--active">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <!-- <div class="navigation__container container"> -->
+      <ul class="navigation__menu">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--active">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+      <!-- </div> -->
     </nav>
   </header>
   <main class="main">
@@ -85,8 +85,8 @@
         </ul>
       </section>
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
         <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек
             и по-прежнему спит по 16 часов в день.</p>
@@ -100,12 +100,13 @@
           </p>
           <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
         </div>
-        <img src="" alt="Фото кота" class="example__img" width="311" height="232">
-
-        <div class="toggle">
-          <button type="button" class="toggle__text">Было</button>
-          <button type="button" class="toggle__text">Стало</button>
-          <div class="toggle__bar"></div>
+        <div class="example__cat-block">
+          <img src="img/before-mobile@1x.png" alt="Фото кота" class="example__img" width="311" height="232">
+          <div class="toggle">
+            <button type="button" class="toggle__text">Было</button>
+            <button type="button" class="toggle__text">Стало</button>
+            <div class="toggle__bar"></div>
+          </div>
         </div>
       </section>
       <div class="container container--contacts-map">
@@ -133,17 +134,18 @@
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
           <a href="#" class="social-list__link">
-            <span>Вконтакте</span>
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" class="social-list__link">
-            <span>Инстаграм</span>
+            <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" class="social-list__link">
-            <span>Твиттер</span>
+            <span class="visually-hidden">Твиттер</span>
+            <!-- v-h убирал для наглядности,что бы небыло просто пустого места :) -->
           </a>
         </li>
       </ul>
