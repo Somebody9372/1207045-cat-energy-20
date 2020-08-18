@@ -71,3 +71,41 @@
   //   color: @white;
   //   }
 }
+
+.navigation__button {
+  border: none;
+  width: 24px;
+  height: 2px;
+  background-color: @black;
+  display: block;
+
+  position: relative;
+
+  margin-left: auto;
+  margin-top: -10px;
+
+
+  &::before,
+  &::after {
+    content: "";
+
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+
+    position: absolute;
+    left: 0;
+  }
+
+  &::before {
+    top: -6px;
+  }
+
+  &::after {
+    top: 6px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

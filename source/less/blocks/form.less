@@ -62,6 +62,30 @@
   }
 }
 
+// .form__input[:not([input type="radio"]) {
+//   display: flex;
+//   flex-grow: 1;
+
+//   margin-left: 13px;
+
+    // Как тут правильно составить конструкцию?
+// }
+
+.form__input {
+  margin-left: 13px;
+}
+
+input[type="radio"] {
+  margin-left: 0;
+  margin-right: 13px;
+}
+
+.form__input--info,
+.form__input--contacts {
+  display: flex;
+  flex-grow: 1;
+}
+
 .form__legend {
   font-size: 24px;
   line-height: 26px;

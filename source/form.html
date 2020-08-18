@@ -11,22 +11,25 @@
 <body class="page__body page__body--form">
   <header class="page-header">
     <nav class="page-header__nav navigation">
-      <a class="navigation__logo logo-link">
-        <img src="" class="logo-link__img" alt="CAT ENERGY" width="101" height="18">
+      <a class="navigation__logo">
+        <img src="" class="navigation__img" alt="CAT ENERGY" width="101" height="18">
       </a>
-      <div class="navigation__container container">
-        <ul class="navigation__menu">
-          <li class="navigation__item">
-            <a class="navigation__link " href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--active">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <button type="button" class="navigation__button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <!-- <div class="navigation__container container"> -->
+      <ul class="navigation__menu">
+        <li class="navigation__item">
+          <a class="navigation__link " href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--active">Подбор программы</a>
+        </li>
+      </ul>
+      <!-- </div> -->
     </nav>
   </header>
   <main class="main">
@@ -41,14 +44,14 @@
           <div class="form__wrapper">
             <fieldset class="form__fieldset form__fieldset--container">
               <legend class="visually-hidden">Информация про вашего кота</legend>
-              <label class="form">Имя:*
-                <input type="text" name="form-name" class="form__input form__input--text" placeholder="Барсик">
+              <label class="form__label">Имя:*
+                <input type="text" name="form-name" class="form__input form__input--info" placeholder="Барсик">
               </label>
-              <label class="form">Вес (кг):*
-                <input type="number" name="form-weight" class="form__input form__input--number" placeholder="7">
+              <label class="form__label">Вес (кг):*
+                <input type="number" name="form-weight" class="form__input form__input--info" placeholder="7">
               </label>
-              <label class="form">Возраст (лет):
-                <input type="number" name="number-age" class="form__input form__input--age" placeholder="7">
+              <label class="form__label">Возраст (лет):
+                <input type="number" name="number-age" class="form__input form__input--info" placeholder="7">
               </label>
             </fieldset>
 
@@ -71,10 +74,11 @@
           <fieldset class="form__fieldset form__fieldset--contacts">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
             <label>E-mail:*
-              <input type="email" name="e-mail" placeholder="kuklachev@gmail.com" class="form__input">
+              <input type="email" name="e-mail" placeholder="kuklachev@gmail.com"
+                class="form__input form__input--contacts">
             </label>
             <label>Телефон:*
-              <input type="tel" name="phone-number" placeholder="8 (960) 900-60-90" class="form__input">
+              <input type="tel" name="phone-number" placeholder="8 (960) 900-60-90" class="form__input--contacts">
             </label>
           </fieldset>
           <label class="form__legend form__legend--comment">Комментарий
