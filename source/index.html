@@ -17,7 +17,6 @@
       <button type="button" class="navigation__button">
         <span class="visually-hidden">Меню</span>
       </button>
-      <!-- <div class="navigation__container container"> -->
       <ul class="navigation__menu">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--active">Главная</a>
@@ -29,12 +28,11 @@
           <a class="navigation__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
-      <!-- </div> -->
     </nav>
   </header>
   <main class="main">
     <section class="promo">
-      <div class="navigation__container container">
+      <div class="container">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__subtitle">Занялся собой? Займись котом!</p>
         <img src="" alt="Пример продукции" class="promo__img" width="280" height="270">
@@ -86,7 +84,9 @@
           </li>
         </ul>
       </section>
-      <section class="example">
+    </div>
+    <section class="example">
+      <div class="container">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
@@ -110,26 +110,26 @@
             <div class="toggle__bar"></div>
           </div>
         </div>
-      </section>
-      <div class="container container--contacts-map">
-        <section class="contacts">
-          <h2 class="visually-hidden">Адрес магазина "Кэт энерджи"</h2>
-          <p class="contacts__text">
-            Приглашаем
-            к сотрудничеству дилеров!</p>
-          <address class="contacts__address">
-            ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</address>
-        </section>
       </div>
-      <section class="map">
-        <img src="" alt="Карта проезда" class="contacts__map" width="320" height="362">
+    </section>
+    <div class="container">
+      <section class="contacts">
+        <h2 class="visually-hidden">Адрес магазина "Кэт энерджи"</h2>
+        <p class="contacts__text">
+          Приглашаем
+          к сотрудничеству дилеров!</p>
+        <address class="contacts__address">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</address>
       </section>
     </div>
+    <section class="map">
+      <img src="" alt="Карта проезда" class="contacts__map" width="320" height="362">
+    </section>
   </main>
-  <div class="container">
-    <footer class="page-footer">
+  <footer class="page-footer">
+    <div class="container">
       <a class="page-footer__logo-link logo-link">
         <img src="logo-link__img" alt="CAT ENERGY" width="128" height="24">
       </a>
@@ -147,7 +147,6 @@
         <li class="social-list__item">
           <a href="#" class="social-list__link">
             <span class="visually-hidden">Твиттер</span>
-            <!-- v-h убирал для наглядности,что бы небыло просто пустого места :) -->
           </a>
         </li>
       </ul>
@@ -158,8 +157,8 @@
           <img src="" alt="Логотип HTML Academy" class="logo-link__img" width="27" height="34">
         </a>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 
 </html>
