@@ -1,6 +1,10 @@
 .example {
   @media (min-width: @desktop-width){
     display: flex;
+
+    .container {
+      display: flex;
+    }
   }
 }
 
@@ -28,6 +32,7 @@
 
   @media (min-width: @desktop-width){
     width: 50%;
+    padding-right: 134px;
   }
 }
 
@@ -81,10 +86,3 @@
     height: 510px;
   }
 }
-// Пока так)
-
-// .example__cat-block {
-//   @media (min-width: @desktop-width) {
-//     display: flex;
-//   }
-// }
