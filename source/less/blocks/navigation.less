@@ -1,60 +1,157 @@
-.navigation__menu {
-  list-style: none;
-  padding: 0;
-  display: none;
-}
-
-
 .navigation {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   font-family: @Oswald;
-
   text-align: center;
+  // white-space: nowrap;
+  padding-top: 24px;
 
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: @black;
+
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 57px 110px 0px 110px;
+  }
+}
+
+.navigation__logo {
+  display: block;
+  padding: 23px 0;
+}
+
+.navigation__img {
+  display: block;
+  margin-right: auto;
+}
+
+.navigation__menu {
+  list-style: none;
+  padding: 0 20px;
+
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: auto;
+
+    margin: 0;
+    padding: 8px 0 0;
+  }
+}
+
+.navigation__item {
+  padding: 22px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation__item:not(:last-child) {
+    margin-right: 33px;
+  }
 }
 
 .navigation__link {
   color: @black;
   text-decoration: none;
-  padding: 11px 0 17px 0;
-}
 
-@media (min-width: @tablet-width) {
-  .navigation {
+  @media (min-width: @tablet-width) {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    display: flex;
-
-    width: 100%;
-  }
-
-  .navigation__menu {
-    display: flex;
-    // c меню что-то странное - не появляется,хотя ей ууазан флекс
   }
 }
 
-
 @media (min-width: @tablet-width) {
-  .navigation__menu {
-    display: flex;
-    justify-content: flex-end;
-  }
   .navigation__link--active {
     border-bottom: 2px solid #68B738;
   }
+}
 
-  .navigation__link {
-    color: @white;
-    }
-
+@media (min-width: @desktop-width) {
   .navigation__link--active {
     border-bottom: 2px solid @white;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .navigation__link--active {
+    border-bottom: 2px solid @white;
+  }
+}
+
+.navigation__button {
+  border: none;
+  cursor: pointer;
+
+  display: block;
+
+  position: relative;
+
+  margin-left: auto;
+  transform: translateY(-45px);
+
+  width: 24px;
+  height: 16px;
+  background-color: transparent;
+
+
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--closed {
+
+  .navigation__button {
+    &::before {
+      content: "";
+
+      width: 24px;
+      height: 2px;
+      background-color: @black;
+
+      position: absolute;
+      left: 0;
+
+      box-shadow: 0 8px 0 0 #000, 0 -8px 0 0 #000;
+    }
+  }
+}
+
+.navigation--opened {
+
+  .navigation__button {
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+
+      width: 24px;
+      height: 2px;
+      background-color: @black;
+
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
