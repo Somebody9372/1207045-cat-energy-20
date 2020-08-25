@@ -1,19 +1,27 @@
 .promo {
   color: @white;
-  background-color: @green;
-  background-size: cover;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+
+  padding-top: 1px;
+
+  // Если тут убрать верхний паддинг,происходит нечто странное.Это схлопыавние маргинов?
 
 
-  background-position: center bottom 175px;
-}
+@media (min-width: @mobile-width) and (max-width: @tablet-width) {
+    min-height: 480px;
+    background: linear-gradient(to bottom,@green 64%, @white 64%);
+  }
 
-@media (min-width: @mobile-width) {
-  .promo {
-    min-height: 320px;
+  @media (min-width: @tablet-width) {
+    padding-left: 87px;
+    min-height: 854px;
+    text-align: left;
+
+
+    padding-left: 153px;
+    padding-top: 18px;
+
   }
 }
 
@@ -22,42 +30,76 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  text-align: center;
 
-  margin: 0;
+  margin: 27px 0 25px;
   padding: 0 10px;
 
-  text-align: center;
-}
-
-@media (min-width: @tablet-width) {
-  .promo__title {
+  @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    color: @black;
+    text-align: left;
+
+    margin-bottom: 40px;
+
   }
 }
+
 
 .promo__subtitle {
   font-family: @Oswald;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    text-align: left;
+
+    padding-left: 10px;
+    margin-bottom: 65px;
   }
+}
+
+.promo__img {
+  display: none;
+  // Пока что скрою
 }
 
 .promo__link {
   font-size: 14px;
   line-height: 18px;
+  font-family: @Oswald;
   color: @white;
   text-decoration: none;
+  text-transform: uppercase;
 
-  width: 100%;
+  @media (min-width: @mobile-width) and (max-width: @tablet-width) {
+    min-width: 280px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% -140px);
+    // - тут выдаёт ошибку "Некорректное значение свойства"
+    // Но на место встаёт,если задать block. Чудеса ))
+
+    display: block;
+
+    text-align: center;
+
+    padding: 7px 44px;
+  }
+
 
   @media (min-width: @tablet-width)  {
     font-size: 20px;
     line-height: 20px;
+
+
+    padding: 11px 26px;
+    margin-left: 5px;
   }
 }
