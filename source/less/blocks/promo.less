@@ -5,8 +5,6 @@
 
   padding-top: 1px;
 
-  // Если тут убрать верхний паддинг,происходит нечто странное.Это схлопыавние маргинов?
-
 
 @media (min-width: @mobile-width) and (max-width: @tablet-width) {
     min-height: 480px;
@@ -14,14 +12,20 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 87px;
+
     min-height: 854px;
     text-align: left;
 
+    padding-top: 25px;
+    padding-left: 78px;
+  }
 
-    padding-left: 153px;
-    padding-top: 18px;
+  @media (min-width: @desktop-width) {
+    padding-left: 70px;
+    padding-top: 76px;
 
+    min-height: 580px;
+    // Временно
   }
 }
 
@@ -61,7 +65,7 @@
     text-align: left;
 
     padding-left: 10px;
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 }
 
@@ -90,7 +94,7 @@
 
     text-align: center;
 
-    padding: 7px 44px;
+    padding: 8px 44px;
   }
 
 
@@ -100,6 +104,6 @@
 
 
     padding: 11px 26px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
 }

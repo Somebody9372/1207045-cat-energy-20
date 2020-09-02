@@ -5,7 +5,11 @@
   text-transform: uppercase;
   font-family: @Oswald;
   text-align: center;
-  // white-space: nowrap;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -14,14 +18,13 @@
     color: @black;
 
     width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
 
+    align-items: flex-start;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 57px 110px 0px 110px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -30,7 +33,11 @@
   padding: 14px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 30px 0;
+    padding-top: 35px
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 60px
   }
 }
 
@@ -39,7 +46,7 @@
 .navigation__item {
 
   @media (min-width: @mobile-width) and (max-width: @tablet-width) {
-// @mobile-width-only взят из демки,думаю не должно быть ошибкой?
+
   position: relative;
 
     &::after {
@@ -64,11 +71,7 @@
   cursor: pointer;
 
   display: block;
-
   position: relative;
-
-  margin-left: auto;
-  transform: translateY(-42px);
 
   width: 24px;
   height: 16px;
@@ -132,7 +135,7 @@
 
 .navigation__menu {
   list-style: none;
-  padding: 0 20px;
+  padding: 17px 20px;
 
   margin: 0 auto;
 
@@ -145,6 +148,10 @@
 
     margin: 0;
     padding: 20px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 45px;
   }
 }
 

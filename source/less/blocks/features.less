@@ -1,3 +1,9 @@
+.features {
+  @media (min-width: @desktop-width) {
+    padding-top: 70px;
+  }
+}
+
 .features__title {
   margin: 0;
   font-size: 36px;
@@ -22,7 +28,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 55px;
+    gap: 76px;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,5 +56,19 @@
     padding-right: 80px;
 
     margin-bottom: 190px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 5px;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+}
+
+.features__br-descktop {
+  @media (min-width: @mobile-width) and (max-width: @tablet-width) {
+    display: none;
   }
 }
